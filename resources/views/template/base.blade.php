@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
 </head>
 <body>
-    <h1>Ciao</h1>
-
-    {{-- qui vanno inclusi ad esempio header e footer, segue comando tipo --}}
     @include('partials.header')
+
+    @include('partials.main')
+
     @include('partials.footer')
 </body>
 </html>

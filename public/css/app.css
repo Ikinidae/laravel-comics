@@ -1,5 +1,104 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+header #blue_row {
+  height: 20px;
+  background-color: #0282f9;
+}
+
+header #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+header #header img {
+  width: 50px;
+}
+
+header #header a {
+  text-decoration: none;
+  color: #303030;
+  margin-right: 10px;
+}
+
+header #header a:hover {
+  color: #0282f9;
+}
+
+main {
+  color: white;
+}
+
+main #jumbotron {
+  height: 300px;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+}
+
+main #content {
   background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+main #content .comix {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main #content .comix .comic {
+  margin: 10px;
+  width: 15%;
+}
+
+main #content .comix .comic img {
+  width: 100%;
+}
+
+main #content .comix .comic h5 {
+  color: white;
+}
+
+main #products {
+  background-color: #0282f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main #products a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+main #products a img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+main #products a span {
   color: white;
 }
 

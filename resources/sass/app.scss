@@ -1,4 +1,106 @@
-body {
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+header {
+
+    #blue_row {
+        height: 20px;
+        background-color: #0282f9;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        img {
+            width: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #303030;
+            margin-right: 10px;
+
+            &:hover {
+                color: #0282f9;
+            }
+        }
+    }
+}
+
+main {
     color: white;
+
+    #jumbotron {
+        height: 300px;
+        background-image: url('/img/jumbotron.jpg');
+        background-size: cover;
+    }
+
+    #content {
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        .comix {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .comic {
+                margin: 10px;
+                width: 15%;
+
+                img {
+                    width: 100%;
+                }
+
+                h5 {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #products {
+        background-color: #0282f9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+
+            img {
+                width: 50px;
+                margin-right: 10px;
+            }
+
+            span {
+                color: white;
+            }
+        }
+    }
 }
