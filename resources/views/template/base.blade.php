@@ -1,3 +1,5 @@
+{{-- in questo file vanno inserite tutte le componenti che restano fisse, cioè sono presenti in tutte
+    le pagine del sito, ad esempio header e footer --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
 <body>
     @include('partials.header')
 
-    @include('partials.main')
+    @yield('pageMain')
 
     @include('partials.footer')
 </body>

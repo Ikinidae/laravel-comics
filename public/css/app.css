@@ -35,10 +35,6 @@ header #header a:hover {
   color: #0282f9;
 }
 
-main {
-  color: white;
-}
-
 main #jumbotron {
   height: 300px;
   background-image: url("/img/jumbotron.jpg");
@@ -46,6 +42,7 @@ main #jumbotron {
 }
 
 main #content {
+  color: white;
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -64,6 +61,7 @@ main #content .comix {
 main #content .comix .comic {
   margin: 10px;
   width: 15%;
+  text-decoration: none;
 }
 
 main #content .comix .comic img {

@@ -18,3 +18,22 @@ Route::get('/', function () {
     $nav = config('nav');
     return view('home', ['comicsArr' => $comicsArr], ['nav' => $nav]);
 })->name('home');
+
+Route::get('/products/{id}', function ($id) {
+    $nav = config('nav');
+    $comic = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id) {
+            $comic = $value;
+            break;
+        }
+    }
+
+    if ($comic) {
+        return view('product', [
+            'comic'     => $comic,
+        ], ['nav' => $nav]);
+    } else {
+        abort(404);
+    }
+})->name('product');

@@ -39,7 +39,6 @@ header {
 }
 
 main {
-    color: white;
 
     #jumbotron {
         height: 300px;
@@ -48,6 +47,7 @@ main {
     }
 
     #content {
+        color: white;
         background-color: black;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -64,6 +64,7 @@ main {
             .comic {
                 margin: 10px;
                 width: 15%;
+                text-decoration: none;
 
                 img {
                     width: 100%;
